@@ -2,3 +2,7 @@ This is ex15_sample.txt
 please continue
 
 ex15_sample---end
+这是啥
+..............
+
+ex15_sample---end
