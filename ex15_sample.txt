@@ -18,3 +18,7 @@ ex15_sample---end
 
 hub master change1
 source master change1
+hub  change1
+hub change2
+
+hub change3
