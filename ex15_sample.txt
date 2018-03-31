@@ -1,4 +1,5 @@
 This is ex15_sample.txt
 please continue
-
+------------
+这是啥
 ex15_sample---end
