@@ -1,0 +1,68 @@
+PS D:\PythonDevelopment> python
+Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:19:30) [MSC v.1500 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ex25
+>>> sentence = "All good thongs come to those who wait."
+>>> words = ex25.break_words(sentence)
+>>> words
+['All', 'good', 'thongs', 'come', 'to', 'those', 'who', 'wait.']
+>>> sorted_words = ex25.sort_words(words)
+>>> sorted_words
+['All', 'come', 'good', 'thongs', 'those', 'to', 'wait.', 'who']
+>>> ex25.print_first_word(words)
+All
+>>> ex25.print_first_word(words)
+good
+>>> ex25.print_last_word(words)
+wait.
+>>> words
+['thongs', 'come', 'to', 'those', 'who']
+>>> words = ex25.break_words(sentence)
+>>> words
+['All', 'good', 'thongs', 'come', 'to', 'those', 'who', 'wait.']
+>>> ex25.print_first_and_last(sentence)
+All
+wait.
+>>> help ex25
+  File "<stdin>", line 1
+    help ex25
+            ^
+SyntaxError: invalid syntax
+>>> exit()
+PS D:\PythonDevelopment> python
+Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:19:30) [MSC v.1500 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ex25
+>>> help(ex25)
+Help on module ex25:
+
+NAME
+    ex25
+
+FILE
+    d:\pythondevelopment\ex25.py
+
+FUNCTIONS
+    break_words(stuff)
+        This function will break up words for us.
+
+    print_first_and_last(sentence)
+        Prints the first and last words of the sentence
+
+    print_first_and_last_sorted(sentence)
+        Sorts the words then prints the first and last one.
+
+    print_first_word(words)
+        Prints the first word after poping it off.
+
+    print_last_word(words)
+        Prints the last word after popping it off.
+
+    sort_sentence(sentence)
+        Take in a full sentence and returns the sorted words.
+
+    sort_words(words)
+        Sorts the words
+
+
+>>>
