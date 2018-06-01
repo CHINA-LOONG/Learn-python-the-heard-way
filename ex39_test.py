@@ -3,7 +3,7 @@ import hashmap
 
 # create a mapping of state to abbreviation
 states = hashmap.new()
-hashmap.set(states, 'Oregon','OR')
+hashmap.set(states, 'Oregon', 'OR')
 hashmap.set(states, 'Florida', 'FL')
 hashmap.set(states, 'California', 'CA')
 hashmap.set(states, 'New York', 'NY')
@@ -47,7 +47,7 @@ print '-' * 10
 state = hashmap.get(states, 'Texas')
 
 if not state:
-	print "Sorry, no Texas."
+    print "Sorry, no Texas."
 
 # default values using ||= with the nil result
 # can you do this on one line?
