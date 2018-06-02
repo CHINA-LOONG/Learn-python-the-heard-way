@@ -1,12 +1,14 @@
 from nose.tools import *
 from ex47.game import Room
 
+
 def test_room():
-    gold = Room("GoldRoom", 
+    gold = Room("GoldRoom",
                 """This room has gold in it you can grab. There's a
                 door to the north.""")
     assert_equal(gold.name, "GoldRoom")
     assert_equal(gold.paths, {})
+
 
 def test_room_paths():
     center = Room("Center", "Test room in the center.")
@@ -16,6 +18,7 @@ def test_room_paths():
     center.add_paths({'north': north, 'south': south})
     assert_equal(center.go('north'), north)
     assert_equal(center.go('south'), south)
+
 
 def test_map():
     start = Room("Start", "You can go west and down a hole.")
@@ -30,5 +33,6 @@ def test_map():
     assert_equal(start.go('west').go('east'), start)
     assert_equal(start.go('down').go('up'), start)
 
+
 def test_aa():
-	print "test_aa"
+    print "test_aa"
